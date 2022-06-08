@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -11,14 +11,163 @@
   <title>Здоровое питание для мам</title>
 </head>
 
-<body>
+<body class="page__body">
     <header class="main-header">
+      <div class="main-header__wrapper">
+        <p class="main-header__site-name">Здоровая мама</p>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--current">
+                <a class="site-list__link" href="#">Важность правильного питания</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Почему мы?</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="#">Где заказать?</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-content">
+      <h1 class="main-content__title">Доставка здорового питания для мам </h1>
+      <section class="suggestion">
+        <div class="suggestion__wrapper">
+          <h2 class="visually-hidden">Предложение оформить заказ.</h2>
+          <p class="suggestion__slogan">Правильный и вкусный рацион
+            для Вас и вашего ребенка</p>
+          <a class="suggestion__button" href="#">Оформить заказ</a>
+          <div class="slider-mom">
+            <!-- https://habr.com/ru/post/324034/ -->
+            <!-- Ещё подумать, каким образом оформить слайдер -->
+            <div class="slider-mom__item slider-mom__item--pregnant"></div>
+            <div class="slider-mom__item slider-mom__item--breastfeeding"></div>
+            <div class="slider-mom__item slider-mom__item--lowcollar"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons">
+        <div class="reasons__wrapper">
+          <h2 class="reasons__title">Почему Вам нужно правильно питаться?</h2>
+          <ul class="reasons__list">
+            <li class="reasons__item">Здоровый ребенок</li>
+            <li class="reasons__item">Повышение иммунитета</li>
+            <li class="reasons__item">Поддержание фигуры</li>
+            <li class="reasons__item">Отстутствие вредных компонентов </li>
+            <li class="reasons__item">Снижение нагрузки на органы
+              пищеварения</li>
+          </ul>
+          <div class="reasons__author nutritionist">
+            <img class="nutritionist__image" src="" alt="Иванова Надежда Александровна-врач-диетолог">
+            <div class="nutritionist__desc">
+              <p class="nutritionist__name">
+                Иванова Надежда Александровна
+              </p>
+              <p class="nutritionist__activity">
+                Сертифицированный диетолог
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="important-food">
+        <div class="important-food__wrapper">
+          <h2 class="important-food__title">Обязательные продукты
+            для здорового питания:</h2>
+            <div class="important-food__slider slider-food">
+              <div class="slider-food__item slider-food__item--meat"></div>
+              <div class="slider-food__item slider-food__item--vegitables"></div>
+              <div class="slider-food__item slider-food__item--milk"></div>
+            </div>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features__wrapper">
+          <h2 class="features__title">Почему мамы 
+            выбирают нашу доставку?</h2>
+            <ul class="features__list positive-list">
+              <li class="positive-list__item positive-list__item--ecology">
+                <h3 class="positive-list__title">Экологичность:</h3>
+                <p class="positive-list__info">продукты выращиваются без применения химии</p>
+              </li>
+              <li class="positive-list__item positive-list__item--balance">
+                <h3 class="positive-list__title">Сбалансированность:</h3>
+                <p class="positive-list__info">наши блюда составляют ведущие диетологи по уникальной рецептуре</p>
+              </li>
+              <li class="positive-list__item positive-list__item--personality">
+                <h3 class="positive-list__title">Индивидуальность:</h3>
+                <p class="positive-list__info">для вашего выбора мы предоставляем большое кол-во вариантов блюд</p>
+              </li>
+              <li class="positive-list__item positive-list__item--advantage">
+                <h3 class="positive-list__title">Польза:</h3>
+                <p class="positive-list__info">питаясь нашими продуктами, Вы можете быть уверены в своем
+                  здоровье и здоровье ребенка</p>
+              </li>
+            </ul>
+        </div>
+      </section>
+
+      <section class="social">
+        <div class="social__wrapper">
+          <h2 class="social__title">Наш Instagram</h2>
+          <p class="social__subscribe"><a class="social__link" href="#">Подписывайтесь</a>, чтобы быть в курсе последних новостей</p>
+        </div>
+      </section>
+
+      <section class="request">
+        <div class="request__wrapper">
+          <h2 class="request__title">Хотите получить персональное меню?</h2>
+          <form class="request__form" method="post">
+            <p class="request__form-info">Оставьте заявку и наш оператор свяжется с Вами для уточнения деталей</p>
+            <p class="request__form-name">
+              <label class="request__label">
+                <input class="request__input" type="text" name="name" value="Ваше имя">
+              </label>
+            </p>
+            <p class="request__form-phone">
+              <label class="request__label">
+                <input class="request__input" type="tel" name="phone" value="Ваше телефон">
+              </label>
+            </p>
+            <p class="request__form-button">
+              <input class="request__button" type="submit" value="Оформить заказ">
+            </p>
+          </form>
+        </div>
+      </section>
+
     </main>
     <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <p class="main-footer__site-name">Здоровая мама</p>
+        <nav class="main-nav-footer">
+          <ul class="main-nav-footer__list site-list-footer">
+            <li class="site-list-footer__item site-list-footer__item--current">
+              <a class="site-list-footer__link" href="#">Важность правильного питания</a>
+            </li>
+            <li class="site-list-footer__item">
+              <a class="site-list-footer__link" href="#">Почему мы?</a>
+            </li>
+            <li class="site-list-footer__item">
+              <a class="site-list-footer__link" href="#">Где заказать?</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-footer__documents documents">
+          <a class="documents__link" href="#">Политика конфиденциальности</a>
+          <a class="documents__link" href="#">Условия онлайн-использования</a>
+        </div>
+      </div>
     </footer>
-  </div>
 </body>
 
 </html>
