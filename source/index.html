@@ -44,11 +44,21 @@
             для Вас и вашего ребенка</p>
           <a class="suggestion__button" href="#">Оформить заказ</a>
           <div class="slider-mom">
-            <!-- https://habr.com/ru/post/324034/ -->
-            <!-- Ещё подумать, каким образом оформить слайдер -->
-            <div class="slider-mom__item slider-mom__item--pregnant"></div>
-            <div class="slider-mom__item slider-mom__item--breastfeeding"></div>
-            <div class="slider-mom__item slider-mom__item--lowcollar"></div>
+            <ul class="slider-mom__items">
+              <li class="slider-mom__item slider-mom__item--pregnant">
+                <img class="slider-mom__image" src="" alt="Беременная женщина">
+              </li>
+              <li class="slider-mom__item slider-mom__item--breastfeeding">
+                <img class="slider-mom__image" src="" alt="Женщина с ребенком на руках">
+              </li>
+              <li class="slider-mom__item slider-mom__item--lowcollar">
+                <img class="slider-mom__image" src="" alt="Женщина кушает яблоко">
+              </li>
+            </ul>
+            <div class="slider-mom__controls">
+              <button class="slider-mom__controls slider-mom__controls--prev" type="button">Предыдущий слайд</button>
+              <button class="slider-mom__controls slider-mom__controls--next" type="button">Следующий слайд</button>
+            </div>
           </div>
         </div>
       </section>
@@ -83,9 +93,21 @@
           <h2 class="important-food__title">Обязательные продукты
             для здорового питания:</h2>
             <div class="important-food__slider slider-food">
-              <div class="slider-food__item slider-food__item--meat"></div>
-              <div class="slider-food__item slider-food__item--vegitables"></div>
-              <div class="slider-food__item slider-food__item--milk"></div>
+              <ul class="slider-food__items">
+                <li class="slider-food__item slider-food__item--meat">
+                  <img class="slider-food__image" src="" alt="Курица">
+                </li>
+                <li class="slider-food__item slider-food__item--milk">
+                  <img class="slider-food__image" src="" alt="Молочные продукты">
+                </li>
+                <li class="slider-food__item slider-food__item--vegitables">
+                  <img class="slider-food__image" src="" alt="Овощи">
+                </li>
+              </ul>
+              <div class="slider-food__controls">
+                <button class="slider-food__controls slider-food__controls--prev" type="button">Предыдущий слайд</button>
+                <button class="slider-food__controls slider-food__controls--next" type="button">Следующий слайд</button>
+              </div>
             </div>
         </div>
       </section>
@@ -169,5 +191,7 @@
       </div>
     </footer>
 </body>
+
+<script src="../js/script.js" type="text/javascript"></script>
 
 </html>
